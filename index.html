@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <!-- Logo Instagram -->
+        <img src="images/Group.svg" alt="Instagram Logo" class="logoMobile">
+        <img src="images/Group.png" alt="Instagram Logo" class="logo">
+    
+        <!-- Burger Icon -->
+        <div class="burger-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+    
+        <!-- Navigation Menu -->
+        <ul class="nav-links">
+          <li><a href="./index.html">Accueil</a></li>
+          <li>Découvrir</li>
+          <li>Reels</li>
+          <li>Messages</li>
+          <li>Notifications</li>
+          <li>Stories</li>
+          <li><a href="./index2.html">Profil</a></li>
+        </ul>
+
+        <!-- Actions (recherche et créer) -->
+        <div class="actions">
+            <div class="search-icon">
+                <img src="images/Vector.svg" alt="Search Icon">
+            </div>
+            
+            <div class="create-button">
+              <div class="icon-circle">
+                  <span class="plus-icon">+</span>
+              </div>
+              <span class="button-text">Créer</span>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+<div class="stories-section">
+    <h2>Pour vous - <strong>Suivi(e)</strong></h2>
+    <div class="stories">
+        <div class="story">
+            <img src="images/story1.png" alt="Story 1">
+        </div>
+        <div class="story">
+            <img src="images/story2.png" alt="Story 2">
+        </div>
+        <div class="story">
+            <img src="images/story3.png" alt="Story 3">
+        </div>
+        <div class="story">
+            <img src="images/story4.png" alt="Story 4">
+        </div>
+        <div class="story">
+            <img src="images/story5.png" alt="Story 5">
+        </div>
+        <div class="story">
+            <img src="images/story6.png" alt="Story 6">
+        </div>
+        <div class="story">
+            <img src="images/story7.png" alt="Story 7">
+        </div>
+    </div>
+</div>
+<section class="main-section">
+  <!-- Actualités -->
+  <div class="actualites-section">
+      <h2>Actualités</h2>
+      <div class="posts">
+          <!-- Post 1 -->
+          <div class="post">
+              <img src="images/image1.png" alt="Post 1">
+              <div class="user-info">
+                  <img src="images/story1.png" alt="Avatar 1" class="avatar">
+                  <p>@bobo_poils</p>
+              </div>
+          </div>
+          <!-- Post 2 -->
+          <div class="post">
+              <img src="images/image2.png" alt="Post 2">
+              <div class="user-info">
+                  <img src="images/story2.png" alt="Avatar 2" class="avatar">
+                  <p>@CheveuLulu</p>
+              </div>
+          </div>
+          <!-- Post 3 -->
+          <div class="post">
+              <img src="images/image3.png" alt="Post 3">
+              <div class="user-info">
+                  <img src="images/story3.png" alt="Avatar 3" class="avatar">
+                  <p>@lulunettes</p>
+              </div>
+          </div>
+          <!-- Post 4 -->
+          <div class="post">
+              <img src="images/image4.png" alt="Post 4">
+              <div class="user-info">
+                  <img src="images/story4.png" alt="Avatar 4" class="avatar">
+                  <p>@barbapapa</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Suggestions -->
+  <aside class="suggestions-section">
+      <h2>Suggestions</h2>
+      <ul class="suggestions">
+          <li class="suggestion">
+              <img src="images/story1.png" alt="Avatar 1" class="avatar">
+              <p>@bobo_poils</p>
+              <button class="follow-btn">Suivre</button>
+          </li>
+          <li class="suggestion">
+              <img src="images/story2.png" alt="Avatar 2" class="avatar">
+              <p>@CheveuLulu</p>
+              <button class="follow-btn">Suivre</button>
+          </li>
+          <li class="suggestion">
+              <img src="images/story3.png" alt="Avatar 3" class="avatar">
+              <p>@lulunettes</p>
+              <button class="follow-btn">Suivre</button>
+          </li>
+          <li class="suggestion">
+              <img src="images/story4.png" alt="Avatar 4" class="avatar">
+              <p>@barbapapa</p>
+              <button class="follow-btn">Suivre</button>
+          </li>
+      </ul>
+  </aside>
+</section>
+<footer class="footer">
+  <p>Meta verified</p>
+  <p>© 2024 Instagram par Meta</p>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const burgerIcon = document.querySelector(".burger-icon");
+      const navLinks = document.querySelector(".nav-links");
+
+      burgerIcon.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+      });
+  });
+</script>
+
+
+</body>
+</html>

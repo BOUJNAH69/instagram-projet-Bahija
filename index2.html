@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Logo Instagram -->
+            <img src="images/Group.svg" alt="Instagram Logo" class="logoMobile">
+            <img src="images/Group.png" alt="Instagram Logo" class="logo">
+    
+            <div class="burger-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            <!-- Menu de navigation -->
+            <ul class="nav-links">
+                <img src="images/avatarProfile.png" class="avatarNav"/>
+                <p>Jean Robinet</p>
+                <p>@jean_lebarbu</p>
+                <li><a href="./index.html">Accueil</a></li>
+                <li>Découvrir</li>
+                <li>Reels</li>
+                <li>Messages</li>
+                <li>Notifications</li>
+                <li>Stories</li>
+                <li><a href="./index2.html">Profil</a></li>
+            </ul>
+    
+            <!-- Actions (recherche et créer) -->
+            <div class="actions">
+                <div class="search-icon">
+                    <img src="images/Vector.svg" alt="Search Icon">
+                </div>
+                <div class="create-button">
+                  <div class="icon-circle">
+                      <span class="plus-icon">+</span>
+                  </div>
+                  <span class="button-text">Créer</span>
+              </div>
+            </div>
+        </nav>
+      </header>
+        <!-- Contenu principal -->
+        <main class="main-profile">
+
+            <section class="profile-section">
+                <div class="profile-card">
+                    <!-- Image de profil principale -->
+                    <div class="profile-photo-container">
+                        <img src="images/photoDeprofil.png" alt="Photo de profil" class="profile-photo">
+                        <img src="images/avatarProfile.png" alt="Avatar" class="profile-avatar">
+                    </div>
+                    <!-- Nom et pseudo -->
+                    <div class="profile-header">
+                        <h3 class="profile-name">Jean Robinet</h3>
+                        <img src="images/gear.png" alt="Settings Icon" class="settings-icon">
+                    </div>
+                    <p class="profile-username">@jean_lebarbu</p>
+                    <!-- Biographie -->
+                    <p class="bio">
+                        Salut, je m'appelle Jean et j’adore capturer le monde tel qu’il est. Je suis designer freelance basé à Paris.
+                    </p>
+                    <!-- Statistiques -->
+                    <div class="stats">
+                        <div><strong>20K</strong><span> abonnés</span></div>
+                        <div><strong>432</strong><span> abonnements</span></div>
+                        <div><strong>11K</strong><span> notifs</span></div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <div>
+            <!-- Section Bannière -->
+            <section class="banner-section">
+                <div class="banner">
+                    <img src="images/bienvneu.png" alt="Bannière">
+                    <div class="welcome-text">
+                        <h2>Bienvenue</h2>
+                        <p>@jean_lebarbu</p>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <!-- Section Stories -->
+            <section class="stories-section">
+                <h3>Stories</h3>
+                <div class="stories">
+                    <div class="story">
+                        <img src="images/story1.png" alt="Story 1">
+                    </div>
+                    <div class="story">
+                        <img src="images/story2.png" alt="Story 2">
+                    </div>
+                    <div class="story">
+                        <img src="images/story3.png" alt="Story 3">
+                    </div>
+                    <div class="story">
+                        <img src="images/story4.png" alt="Story 4">
+                    </div>
+                    <div class="story">
+                        <img src="images/story5.png" alt="Story 5">
+                    </div>
+                </div>
+            </section>
+
+            <section class="publications-section">
+                <h3>Publications</h3>
+                <div class="publications">
+                    <div class="publication publication-1">
+                        <img src="images/publi-1.png" alt="Publication 1">
+                    </div>
+                    <div class="publication publication-2">
+                        <img src="images/publi-2.png" alt="Publication 2">
+                    </div>
+                    <div class="publication publication-3">
+                        <img src="images/publi-3.png" alt="Publication 3">
+                    </div>
+                    <div class="publication publication-4">
+                        <img src="images/publi-4.png" alt="Publication 4">
+                    </div>
+                    <div class="publication publication-5">
+                        <img src="images/publi-5.png" alt="Publication 5">
+                    </div>
+                </div>
+            </section>
+            
+            
+        </div>
+        </main>
+        <footer class="footer">
+            <p>Meta verified</p>
+            <p>© 2024 Instagram par Meta</p>
+          </footer>
+          <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const burgerIcon = document.querySelector(".burger-icon");
+                const navLinks = document.querySelector(".nav-links");
+          
+                burgerIcon.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                });
+            });
+          </script>
+</body>
+</html>
